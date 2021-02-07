@@ -1,0 +1,562 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" type="image/png" href="images\2.1.2.png">
+    <meta name="apple-mobile-web-app-title" content="Technical Documentation Page">
+    <link rel="shortcut icon" type="image/png" href="images\2.1.2.png">
+    <link rel="mask-icon" type="" href="images\2.1.2.png" color="#111">
+    <title>CodePen - FCC: CAEV 2013 Technical Documentation Page</title>
+    <style>
+    html,
+    body {
+      min-width: 290px;
+      color: #4d4e53;
+      background-color: #ffffff;
+      font-family: "Open Sans", Arial, sans-serif;
+      line-height: 1.5;
+    }
+    
+    #navbar {
+      position: fixed;
+      min-width: 290px;
+      top: 0px;
+      left: 0px;
+      width: 300px;
+      height: 100%;
+      border-right: solid;
+      border-color: rgba(0, 22, 22, 0.4);
+    }
+    
+    header {
+      color: black;
+      margin: 10px;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: thin;
+    }
+    
+    #main-doc header {
+      text-align: left;
+      margin: 0px;
+    }
+    
+    #navbar ul {
+      height: 88%;
+      padding: 0;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    
+    #navbar li {
+      color: #4d4e53;
+      border-top: 1px solid;
+      list-style: none;
+      position: relative;
+      width: 100%;
+    }
+    
+    #navbar a {
+      display: block;
+      padding: 10px 30px;
+      color: #4d4e53;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    #main-doc {
+      position: absolute;
+      margin-left: 310px;
+      padding: 20px;
+      margin-bottom: 110px;
+    }
+    
+    section article {
+      color: #4d4e53;
+      margin: 15px;
+      font-size: 0.96em;
+    }
+    
+    section li {
+      margin: 15px 0px 0px 20px;
+    }
+    
+    code {
+      display: block;
+      text-align: left;
+      white-space: pre;
+      position: relative;
+      word-break: normal;
+      word-wrap: normal;
+      line-height: 2;
+      background-color: #f7f7f7;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+    
+    @media only screen and (max-width: 815px) {
+      /* For mobile phones: */
+      #navbar ul {
+        border: 1px solid;
+        height: 207px;
+      }
+    
+      #navbar {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+      }
+    
+      #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+      }
+    }
+    
+    @media only screen and (max-width: 400px) {
+      #main-doc {
+        margin-left: -10px;
+      }
+    
+      code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+      }
+    }
+    </style>
+    <script>
+      window.console = window.console || function(t) {};
+    </script>
+    <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
+    </head>
+    <body translate="no">
+    <nav id="navbar">
+    <header>
+    CLASIFICADOR VENEZOLANO DE ACTIVIDADES ECONÓMICAS
+    </header>
+    <ul>
+    <li><a class="nav-link" href="#Introducción">Introducción</a>
+    </li>
+    <li>
+    <a class="nav-link" href="#Antecedentes_Históricos">Antecedentes Históricos</a>
+    </li>
+    <li>
+    <a class="nav-link" href="#Finalidad">Finalidad</a>
+    </li>
+    <li><a class="nav-link" href="#Cobertura">Cobertura</a></li>
+    <li><a class="nav-link" href="#Conceptos_y_Definiciones">Conceptos y Definiciones</a></li>
+    <li>
+    <a class="nav-link" href="#Estructura_General_del_CAEV">Estructura General del CAEV</a>
+    </li>
+    <li><a class="nav-link" href="#Referencias">Referencias</a></li>
+    </ul>
+    </nav>
+    <main id="main-doc">
+    <section class="main-section" id="Introducción">
+    <header>Introducción</header>
+    <article>
+    <p>
+      La Clasificación Industrial Internacional Uniforme de todas las Actividades
+      Económicas (CIIU), es un sistema lingüístico para comunicar y procesar
+      estadísticamente los fenómenos económicos. Tiene la función de reunir datos
+      basados en un ordenamiento lógico, homogéneo, coherente y consistente de las
+      actividades económicas.
+    </p>
+
+    <p>
+      Proporciona un marco general donde los datos económicos pueden
+      congregarse, evaluarse y divulgarse, a los fines de análisis con principios y
+      percepciones económicas, adopción de decisiones y elaboración de políticas.
+    </p>
+
+    <p>
+      Las clasificaciones, una vez estructuradas, se mantienen durante un tiempo
+      considerable; la tarea respecto a ellas es el mantenimiento, la actualización, la
+      mejora y los enlaces entre las clasificaciones existentes, para así garantizar la
+      reunión, la tabulación, el análisis, la presentación de los datos, la relación entre la
+      economía con los sectores de la enseñanza, salud y medio ambiente, etc, tanto
+      nacional como internacional.
+    </p>
+
+    <p>
+      El grado de detalle necesario en la clasificación de los datos por actividades
+      económicas, varía según los países. Las peculiaridades geográficas e históricas y
+      las diferencias en el nivel de desarrollo industrial y en la organización de las
+      actividades económicas dan lugar a diferencias en detalle y estructura con que los
+      distintos países consideran necesario o viable clasificar los datos por tipos de
+      actividad económica.
+    </p>
+
+    <p>
+      La CIIU, es un instrumento básico que facilita a través de su aplicación, el
+      análisis de los datos y la comparabilidad nacional e internacional, el cual permite
+      reflejar la realidad económica de un país. Por ello se considera conveniente que
+      cada país tenga un clasificador propio, adaptado a su realidad nacional, donde
+      refleje no sólo el vocablo, sino sus particularidades específicas, reflejadas y
+      sustentadas mediante cifras proporcionadas por los organismos especializados.
+    </p>
+
+    <p>
+      La Gerencia de Normalización Estadística del Instituto Nacional de
+      Estadística INE, realizó la adaptación a la realidad de la economía Venezolana, con
+      las finalidades de permitir obtener información relevante y necesaria para la toma
+      de decisiones y ser instrumento del proceso de producción estadística para cada
+      uno de los sectores económicos.
+    </p>
+
+    <p>
+      La Clasificación Industrial Internacional Uniforme adaptada a Venezuela
+      CAEV 2011, está estructurada a 5 dígitos, conserva los primeros cuatro dígitos,
+      respetando la CIIU original, Sección, División, Grupo y Clase y el quinto dígito da
+      la particularidad venezolana, el cual denominamos “Rama”. Esta clasificación está
+      ordenada jerárquicamente de su nivel más agregado al de menor agregación.
+    </p>
+
+    <p>
+      Para la actualización del el CAEV 2011, el Instituto Nacional de Estadística
+      de Venezuela recibió la <b>asesoría de la Lic. Mara Riestra,</b> consultora internacional y
+      colaboradora directa en la CIIU Revisión 4, quién también ha trabajado en la CIIU
+      adaptada no solo a su país en particular (Argentina), sino inclusive en la
+      elaboración de la CLANAE, que es la clasificación sugerida para el MERCOSUR.
+      Adicionalmente, el INE recibió apoyo de la <p>Superintendencia de las Instituciones
+      del Sector Bancario y de la Superintendencia de la Actividad Aseguradora.</p>
+    </p>
+
+    <p>
+      Así mismo, se ha tomado referencia, a través de consultas de internet y análisis de
+      los países que tienen su propia versión de la CIIU, haciendo especial énfasis en la
+      revisión de Latinoamérica, por la pertenencia que tiene Venezuela a esta identidad.
+      (Perú, México, Colombia, Argentina, Chile, Brasil).
+    </p>
+
+    <p>
+      Adicionalmente se realizaron análisis de las bases de datos referentes a las
+      actividades económicas registradas del Censo Nacional de Población y Vivienda
+      del año 2011 y bases de datos de fuentes externas provenientes de registros
+      administrativos. Estas operaciones estadísticas permitieron, gracias a los resultados,
+      ver la representatividad e importancia de cada una de ellas.
+    </p>
+
+    <p>
+      Dentro de los criterios adoptados para la desagregación, combinación o
+      eliminación de categorías está, en primer lugar el criterio de relevancia económica,
+      esto es el peso económico relativo que tengan las actividades agrupadas en las
+      diferentes categorías de la clasificación en la estructura económica y en segundo
+      lugar, el proceso y producto para la definición de categorías. Sin embargo, se 
+      centrará en la función de producción como concepto fundamental, circunscrita por
+      los criterios de pertenencia, comparabilidad y continuidad.
+    </p>
+
+    <p>
+      La creación de nuevas categorías consiste en incluir, en la estructura de la
+      clasificación de referencia, categorías o actividades económicas recientes y que
+      representen fenómenos económicos presentes en el país y que no han sido
+      descritos claramente en dicha estructura. De igual manera, la creación de estas
+      nuevas categorías puede obedecer a la necesidad de resaltar a un nivel jerárquico
+      mayor, fenómenos económicos de interés que no tengan un adecuado nivel
+      superior en la estructura de la clasificación de referencia.
+    </p>
+
+    <p>
+      Es de mencionar que el proceso de actualización es permanente, dado la velocidad
+      de la tecnología y los constantes cambios a los que están sometidas las actividades
+      económicas, tanto para la producción de bienes como de servicios.
+    </p>
+
+    <p>
+      El CAEV 2013, está estructurada a 5 dígitos, donde el quinto dígito da la particularidad venezolana, el cual denominamos “Rama”. Desagregado de la siguiente manera:
+    </p>
+
+    <ul>
+    <li>
+      <b>SECCIÓN</b>, agrupa información estadística correspondiente a un sector de la economía con características homogéneas. Se identifica con un código alfabético (letras mayúsculas). 
+    </li>
+    <li>
+    <b>DIVISIÓN</b>, corresponde a una categoría de tabulación más detallada y agrupa actividades pertenecientes a un mismo sector económico con mayor grado de homogeneidad, tomando en cuenta la especialidad de las actividades económicas que desarrollan, las características y el uso de los bienes producidos y los servicios prestados, los insumos, el proceso y la tecnología de producción utilizada. Representada por un código numérico de dos dígitos. 
+    </li>
+    <li>
+    <b>GRUPO</b>, constituye categorías de actividades organizadas en una división de manera más especializada y homogénea, para ello se tomó en cuenta los mismos criterios que para la conformación de las divisiones. Representada por un código numérico de tres dígitos.
+    </li>
+    <li>
+    <b>CLASE</b>, identifica en los dos primeros dígitos la división, en el tercero el grupo y el cuarto la clase, clasifica las características específicas de una actividad económica. Representada por un código numérico de cuatro dígitos.
+    </li>
+    <li>
+    <b>RAMA</b>, es la categoría más desagregada dentro de la estructura, clasifica características específicas de una actividad económica. Representada por un código numérico de cinco dígitos. 
+    </li>
+    </ul>
+    <img src="images\codificación caev.png" alt="Codificación CAEV 2013">
+    </article>
+    </section>
+    <section class="main-section" id="Antecedentes_Históricos">
+    <header>Antecedentes Históricos</header>
+    <article>
+
+    <p>La Clasificación Industrial Internacional Uniforme de todas las Actividades Económicas CIIU, nace de la necesidad de aplicar un plan de armonización e integración de los diferentes tipos de clasificaciones económicas elaboradas por distintas organizaciones internacionales, el cual representaba la posibilidad de comparar datos internacionales relativos a diversas estadísticas, clasificados por tipo de actividad económica o por bienes y servicios, así como también asegurar su coherencia con el Sistema de Cuentas Nacionales y el Sistema de Balance de la Economía Nacional. 
+    </p>
+
+    <p>Surge así la versión original de la CIIU, adoptada en el año 1948, aprobada
+    por el Consejo Económico y Social mediante resolución, el cual fue preparada por
+    la Comisión de Estadísticas con el asesoramiento y ayuda de los Gobiernos de los
+    Estados miembros.
+    </p>
+
+    <p>Esta versión original de la CIIU se le ha dado varios usos tanto en el plano
+    nacional como en el plano internacional, para clasificar los datos según la clase de
+    actividad económica en las esferas de la población, la producción, el empleo, el
+    ingreso nacional y otras estadísticas económicas, se ha empleado como base para
+    preparar planes de clasificación de las industrias y adaptaciones de series
+    estadísticas.
+    </p>
+
+    <p>Podemos mencionar dentro de los organismos internacionales que han dado
+    uso a la CIIU para clasificar datos según la clase de actividad económica, publicar
+    y analizar datos estadísticos a: las Naciones Unidas, la Oficina Internacional del
+    Trabajo (OIT), la Organización para la Agricultura y la Alimentación (FAO), la
+    Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura
+    (UNESCO), la Organización de las Naciones Unidas para el Desarrollo Industrial
+    (ONUDI) y otros Organismos Internacionales.
+    </p>
+
+    <p>Así mismo, esta experiencia en el uso de la CIIU ha demostrado la necesidad de revisar periódicamente la estructura y definición de sus categorías y principios básicos, dado que es evidente la evolución, los cambios que ocurren en la organización de las actividades económicas, la importancia que han adquirido nuevas clases de actividades, el surgimiento de nuevas tecnologías, nuevas divisiones del trabajo y las nuevas necesidades analíticas para los datos clasificados según la clase de actividad económica. 
+    </p>
+    <p>Toda esa experiencia en el uso de la CIIU ha revelado los aspectos de ella que han requerido ampliarse, aclararse y mejorarse, así como otros perfeccionamientos, siempre tomando en cuenta las necesidades nacionales e internacionales sin alterar el marco de la clasificación, por lo tanto la Comisión de Estadísticas examina y delibera en períodos de sesiones para emitir como resultado la preparación y publicación de una CIIU revisada, emitiendo así versiones a lo largo del tiempo como: CIIU Rev.2 en el año 1968, CIIU Rev.3 1989, CIIU Rev.3.1 2002 y CIIU Rev.4 2007. 
+    </p>
+
+    </article>
+    </section>
+    <section class="main-section" id="Finalidad">
+    <header>Finalidad</header>
+    <article>
+    <p>
+      Establecer una clasificación uniforme por tipo de actividad económica productiva, que permita estudiar el comportamiento de las entidades económicas, conocer y delimitar los diferentes sectores económicos del país, así como garantizar la comparabilidad internacional de las estadísticas nacionales, distribuyendo los datos económicos según categorías de actividades con tecnología e insumos de producción similares, el cual ha sido muy utilizada en las esferas de la población, la producción, el empleo, el ingreso nacional y otras estadísticas económicas.
+    </p>
+    </article>
+    </section>
+    <section class="main-section" id="Cobertura">
+    <header>Cobertura</header>
+    <article>
+    La CIIU es una clasificación de actividades cuyo alcance abarca a todas las actividades productivas, es decir aquellas que producen bienes y servicios, tal como se reconoce en el Sistema de Cuentas Nacionales (SNA) y en la CPC.
+
+    <p>
+      Esas actividades económicas se subdividen en una estructura jerárquica, mutuamente excluyentes, lo que facilita la reunión, la presentación y el análisis de los datos correspondientes a niveles detallados de la economía en forma estandarizada y comparación internacional
+    </p>
+    <p>
+    Bajo esta perspectiva, la clasificación CIIU se utiliza para estructurar por clases a las Unidades Estadísticas como: Empresa, Unidad Local, Establecimiento, según la principal actividad económica a la que se dedican.
+    </p>
+
+    </article>
+    </section>
+    <section class="main-section" id="Conceptos_y_Definiciones">
+    <header>Conceptos y Definiciones</header>
+    <p>
+      <b>UNIDADES ESTADÍSTICAS:</b> Se define como las entidades sobre las que se trata de
+      obtener información y sobre las que se compilan en definitiva las estadísticas. En
+      forma complementaria se definen siguiendo criterios jurídicos, contables u
+      organizativos, geográficos o económicos, entre otros.
+      </p>
+      <p>
+      Entre las unidades consideradas las más apropiadas en función de la estructura del
+      sistema productivo tenemos:
+    </p>
+    <ul>
+      <li>
+        <p><b>EMPRESA:</b> Es un agente económico con autonomía para adoptar decisiones
+        financieras y de inversión, con autoridad y responsabilidad para asignar
+        recursos a la producción de bienes o servicios, que puede realizar una o
+        varias actividades productivas, en uno o varios emplazamientos.
+        También se puede considerar como una <b>unidad institucional</b> o la
+        combinación más pequeña de <b>unidades institucionales</b> que abarca y
+        controla, directa o indirectamente, todas las funciones necesarias para
+        realizar sus actividades de producción.</p>
+        <p>
+        La empresa se utiliza como unidad estadística para la compilación de las
+        cuentas de distribución del ingreso, las cuentas de acumulación y los
+        balances, así como en la clasificación de las entidades económicas por
+        sectores institucionales.</p>
+      </li>
+      <li>
+        <p><b>UNIDAD LOCAL:</b> Se define como la empresa o parte de una empresa que
+        se dedica a una actividad productiva en, o desde, una localización dada.
+        Abarca todas las actividades económicas realizadas por una empresa en un
+        mismo emplazamiento. La condición principal es que dependa de una sola
+        entidad propietaria y que se encuentre en un solo emplazamiento, sin
+        embargo puede ser heterogénea respecto de sus actividades.
+      </p>
+        <p>
+        La Unidad Local se utiliza para elaborar estadísticas homogéneas respecto
+        de la región geográfica con independencia de la actividad económica, es a
+        menudo una combinación de actividades.
+      </p>
+      </li>
+      <li>
+      <b>ESTABLECIMIENTO:</b> Se define como una empresa o parte de una empresa,
+        situado en un único emplazamiento, el cual se dedica exclusiva o
+        predominantemente a un tipo de actividad económica, adicionalmente se
+        pueden realizar una o más actividades en pequeña escala (no auxiliar),
+        comparadas con la actividad principal; respecto de la cual existen o
+        pueden compilarse con cierta precisión datos que permitan calcular el
+        excedente de explotación.        
+      </li>
+      <li>
+      <b>GRUPO DE EMPRESAS:</b> Es un conjunto de empresas ligadas por vínculos
+        jurídicos y financieros que están controladas y dirigidas por el mismo
+        interés, principalmente en lo que respecta a la política de producción,
+        ventas y beneficios. Es decir el uso de los ingresos, las inversiones y la
+        financiación del grupo se planifican y administran colectivamente.
+      </li>
+      <li>
+      <b>UNIDAD DE PRODUCCIÓN HOMOGÉNEA:</b> Es la unidad analítica más
+        idónea para los fines del análisis de insumo-producto definida como una
+        unidad productiva en la que se realiza una sola actividad de producción (no
+        auxiliar). Las unidades de producción homogénea son independientes del
+        emplazamiento de la actividad.        
+      </li>
+      <li>
+      <b>ENTIDADES JURÍDICAS:</b> La mayoría de las sociedades prevén el
+        reconocimiento jurídico de las entidades económicas en virtud de leyes que
+        le permiten definirse e inscribirse como entidades jurídicas. Las entidades
+        jurídicas están reconocidas por la ley o por la sociedad,
+        independientemente de las personas o instituciones propietarias. Las
+        entidades jurídicas se caracterizan por poseer bienes o activos, incurrir en
+        obligaciones y suscribir contratos. La entidad jurídica constituye siempre,
+        independientemente o en combinación con otras entidades jurídicas, la
+        base jurídica de las unidades estadísticas.      
+      </li>
+      <li>
+      <b>UNIDADES INSTITUCIONALES:</b> Son las unidades básicas del Sistema de
+        Cuentas Nacionales. Se define como una entidad económica facultada por
+        derecho propio para poseer activos, incurrir en obligaciones y realizar
+        actividades económicas y transacciones con otras entidades. 
+      </li>
+      <li>
+        <p>
+        <b>INTEGRACIÓN VERTICAL DE LAS ACTIVIDADES:</b> Se da cuando las
+          diferentes fases de producción se realizan sucesivamente en la misma
+          unidad y cuando el producto de un proceso sirve como insumo del
+          siguiente, como en el caso de la combinación de la tala de árboles con el
+          subsiguiente aserrado de la madera in situ, el de la cantera de arcilla con la
+          fábrica de ladrillos o el de la producción de fibras sintéticas en una fábrica
+          textil.
+        </p>
+        <p>
+          En la cuarta revisión de la CIIU la integración vertical debe tratarse como
+          cualquier otro caso de actividades múltiples, por lo que una unidad con una
+          cadena de actividades integradas verticalmente se clasificará en la clase
+          correspondiente a la actividad principal de esa cadena, es decir, la que
+          genere mayor proporción del valor añadido de conformidad con el método
+          descendente.   
+        </p> 
+      </li>
+      <li>
+      <b>INTEGRACIÓN HORIZONTAL DE LAS ACTIVIDADES:</b> Se produce cuando
+        la misma actividad da lugar a productos finales con características
+        diferentes. Podría entenderse entonces que se trata de actividades realizadas
+        simultáneamente utilizando los mismos factores de producción, en cuyo
+        caso a efectos estadísticos a menudo sería imposible separar esas
+        actividades en procesos diferentes, asignarlas a diferentes unidades o
+        proporcionar en general datos separados sobre ellas, y no se les podrían
+        aplicar los criterios basados en la imputación del valor añadido ni métodos
+        similares.
+      </li>
+      </ul>
+      <p>
+        Debemos señalar que para clasificar una unidad por actividad económica
+        productiva debemos tener en cuenta adicionalmente las conceptualizaciones
+        siguientes:
+      </p>
+      <ul>
+        <li>
+        <b>PRODUCCIÓN ECONÓMICA:</b> Puede definirse como una actividad
+          realizada bajo el control y la responsabilidad de una unidad institucional
+          que utiliza insumos de mano de obra, capital y bienes y servicios para
+          obtener otros bienes y servicios.
+        </li>
+        <li>
+        <b>ACTIVIDAD PRINCIPAL DE UNA ENTIDAD ECONÓMICA:</b> Es aquella que
+          más aporta al valor añadido de la entidad, según se determine por el
+          método descendente. Los productos resultantes de una actividad principal
+          pueden ser productos principales o subproductos.
+        </li>
+        <li>
+        <b>ACTIVIDAD SECUNDARIA DE UNA ENTIDAD ECONÓMICA:</b> Se entiende
+          toda actividad independiente que genera productos destinados en última
+          instancia a terceros y que no es la actividad principal de la entidad en
+          cuestión. Los productos de las actividades secundarias son productos
+          secundarios. La mayoría de las entidades económicas produce algún
+          producto secundario.     
+        </li>
+        <li>
+        <b>ACTIVIDADES AUXILIARES DE UNA ENTIDAD ECONÓMICA:</b> Son, pues,
+          las que existen para respaldar las actividades de producción principales de
+          una entidad generando productos o servicios no duraderos para uso
+          principal o exclusivo de dicha entidad. Generan productos destinados
+          siempre al consumo intermedio de la propia entidad, y en consecuencia, no
+          suelen registrarse por separado.
+          Las actividades principales y secundarias no pueden llevarse a cabo sin el
+          respaldo de diversas actividades auxiliares, como teneduría de libros,
+          transporte, almacenamiento, compras, promoción de ventas, limpieza,
+          reparaciones, mantenimiento, seguridad, etcétera. El fin de las actividades
+          auxiliares, es el de facilitar las actividades principales o secundarias de la
+          entidad.
+        </li>
+        </ul>
+    </section>
+    <section class="main-section" id="Estructura_General_del_CAEV">
+    <header>Estructura General del CAEV</header>
+    <article>
+    <iframe width="100%" height="1000px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTViM4dNlAhT1aboU0nwdtBD0rf2E2NaVs3_NWzge_C_B8YlFqAOoo_bXNgrtEM7mvuOx0FlvT0m40d/pubhtml?widget=true&amp;headers=false"></iframe>
+    </article>
+    </section>
+    <section class="main-section" id="Referencias">
+    <header>Referencias</header>
+    <article>
+      Instituto Nacional de Estadística
+      <code>
+        <a href="http://www.ine.gov.ve/" target="_blank">Visitar Sitio Web</a>
+      </code>
+      Normas, Clasificadores y Estándares
+      <code>
+        <a href="http://www.ine.gov.ve/index.php?option=com_content&view=category&id=140&Itemid=72#" target="_blank">Visitar Sitio</a>
+      </code>
+      Clasificador Venezolano de Actividades Económicas - CAEV - Versión #1
+      <code>
+        <a href="http://www.ine.gov.ve/documentos/INE/ClasificadoresEstandares/CAEV_2013.pdf" target="_blank">Ver PDF</a>
+      </code>
+      Estructura General del CAEV 2013
+      <code>
+        <a href="http://www.ine.gov.ve/documentos/INE/ClasificadoresEstandares/CAEV_ESTRUCTURA_2013.pdf" target="_blank">Ver PDF</a>
+      </code>
+      Tablas CAEV_ESTRUCTURA_2013 - Google Sheets
+      <code>
+        <a href="https://docs.google.com/spreadsheets/d/1bXvCSK7Mz307swkgZMC5gws0d8hOm-MWX51WwGvczhk/edit?usp=sharing" target="_blank">Ver Tablas CAEV 2013</a>
+      </code>
+    </article>
+    </section>
+    </main>
+    <!--
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script><div id="fcc_test_suite_wrapper" style="position: relative !important; z-index: 99999 !important;"></div>
+    <script id="rendered-js">
+    // coded by @ChaituVR
+    
+    const projectName = 'technical-docs-page';
+    localStorage.setItem('example_project', 'Technical Docs Page');
+    //# sourceURL=pen.js
+        </script>
+    -->
+    </body></html>

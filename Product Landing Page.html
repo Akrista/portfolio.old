@@ -1,0 +1,466 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" type="image/png" href="images\2.1.2.png">
+    <meta name="apple-mobile-web-app-title" content="Product Landing Page">
+    <link rel="shortcut icon" type="image/png" href="images\2.1.2.png">
+    <link rel="mask-icon" type="" href="images\2.1.2.png" color="#111">
+    <title>CodePen - FCC: Master 2021 Product Landing Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <style>
+    
+    @import "https://fonts.googleapis.com/css?family=Lato:400,700";
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background-color: #0A0A0A;
+      font-family: 'Lato', sans-serif;
+    }
+    
+    #page-wrapper {
+      position: relative;
+    }
+
+    p {
+      list-style: none;
+      color: #eee;
+    }
+
+    h2 {
+      list-style: none;
+      color: #FEBA1E;
+    }
+
+    li {
+      list-style: none;
+      color: #eee;
+    }
+    
+    a {
+      color: #eee;
+      text-decoration: none;
+    }
+    
+    /** global classes styling **/
+    
+    .container {
+      max-width: 1000px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .btn {
+      padding: 0 20px;
+      height: 40px;
+      font-size: 1em;
+      font-weight: 900;
+      text-transform: uppercase;
+      border: 3px black solid;
+      border-radius: 2px;
+      background: transparent;
+      cursor: pointer;
+    }
+    
+    .grid {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    
+    header {
+      position: fixed;
+      top: 0;
+      min-height: 75px;
+      padding: 0px 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #0A0A0A;
+    }
+    
+    @media (max-width: 600px) {
+      header {
+        flex-wrap: wrap;
+      }
+    }
+    
+    .logo {
+      width: 60vw;
+    }
+    
+    @media (max-width: 650px) {
+      .logo {
+        margin-top: 15px;
+        width: 100%;
+        position: relative;
+      }
+    }
+    
+    .logo > img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-left: 20px;
+    }
+    
+    @media (max-width: 650px) {
+      .logo > img {
+        margin: 0 auto;
+      }
+    }
+    
+    nav {
+      font-weight: 400;
+    }
+    
+    @media (max-width: 650px) {
+      nav {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 50px;
+      }
+      nav li {
+        padding-bottom: 5px;
+      }
+    }
+    
+    nav > ul {
+      width: 35vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    
+    @media (max-width: 650px) {
+      nav > ul {
+        flex-direction: column;
+      }
+    }
+    
+    #hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 200px;
+      margin-top: 150px;
+    }
+    
+    #hero > h2 {
+      margin-bottom: 20px;
+      word-wrap: break-word;
+    }
+    
+    #hero input[type="email"] {
+      max-width: 275px;
+      width: 100%;
+      padding: 5px;
+    }
+    
+    #hero input[type="submit"] {
+      color: #eee;
+      max-width: 210px;
+      width: 100%;
+      height: 30px;
+      margin: 15px 0;
+      border: 0;
+      background-color: #1AA700;
+    }
+    
+    #hero input[type="submit"]:hover {
+      background-color: #1AA700;
+      transition: background-color 1s;
+    }
+    
+    @media (max-width: 650px) {
+      #hero {
+        margin-top: 120px;
+      }
+    }
+    
+    #features {
+      margin-top: 100px;
+    }
+    
+    #features .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 125px;
+      width: 20vw;
+      color: #1AA700;
+    }
+    
+    @media (max-width: 550px) {
+      #features .icon {
+        display: none;
+      }
+    }
+    
+    #features .desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 125px;
+      width: 80vw;
+      padding: 5px;
+    }
+    
+    @media (max-width: 550px) {
+      #features .desc {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        height: 150px;
+      }
+    }
+    
+    @media (max-width: 650px) {
+      #features {
+        margin-top: 0;
+      }
+    }
+    
+    #how-it-works {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+    }
+    
+    #how-it-works > iframe {
+      max-width: 560px;
+      width: 100%;
+    }
+    
+    #pricing {
+      margin-top: 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    
+    .product {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: calc(100%  / 2);
+      margin: 10px;
+      border: 1px solid #eee;
+      border-radius: 3px;
+    }
+    
+    .product > .level {
+      background-color: #1AA700;
+      color: #eee;
+      padding: 15px 0;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    
+    .product > h2 {
+      margin-top: 15px;
+    }
+    
+    .product > ol {
+      margin: 15px 0;
+    }
+    
+    .product > ol > li {
+      padding: 5px 0;
+    }
+    
+    .product > button {
+      border: 0;
+      margin: 15px 0;
+      background-color: #1AA700;
+      color: #FEBA1E;
+      font-weight: 700;
+    }
+    
+    .product > button:hover {
+      background-color: #1AA700;
+      transition: background-color 1s;
+    }
+    
+    @media (max-width: 800px) {
+      #pricing {
+        flex-direction: column;
+      }
+      .product {
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+    }
+    
+    footer {
+      margin-top: 30px;
+      background-color: #2F2D30;
+      padding: 20px;
+    }
+    
+    footer > ul {
+      display: flex;
+      justify-content: flex-end;
+    }
+    
+    footer > ul > li {
+      padding: 0 10px;
+    }
+    
+    footer > span {
+      margin-top: 5px;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 0.9em;
+      color: #eee;
+    }
+    </style>
+    <script>
+      window.console = window.console || function(t) {};
+    </script>
+    <script>
+      if (document.location.search.match(/type=embed/gi)) {
+        window.parent.postMessage("resize", "*");
+      }
+    </script>
+    </head>
+    <body translate="no">
+    <div id="page-wrapper">
+    <header id="header">
+    <div class="logo">
+    <a href="http://master2021.com/">
+    <img id="header-img" src="http://master2021.com/wp-content/uploads/2020/09/logo-master-1.svg" alt="Master 2021 logo">
+  </a>
+  </div>
+    <nav id="nav-bar">
+    <ul>
+    <li><a class="nav-link" href="#features">Beneficios</a></li>
+    <li><a class="nav-link" href="#how-it-works">Tecnología de Punta</a></li>
+    <li><a class="nav-link" href="#pricing">Precios</a></li>
+    </ul>
+    </nav>
+    </header>
+    <div class="container"></div>
+    <section id="hero">
+      <a href="http://master2021.com/">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT8AAADICAMAAACpmBaMAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxMzggNzkuMTU5ODI0LCAyMDE2LzA5LzE0LTAxOjA5OjAxICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+IEmuOgAAAARnQU1BAACxjwv8YQUAAAABc1JHQgCuzhzpAAACl1BMVEUAAAD///////9emQD///9VlAD///9emQD///////9dmQD///////////+C4guE3Qn///////+F3gz///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9dmQBfmQD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9dmwD///////////////////////////////////////////////////////9OkwD///////////////////////////////9dmAD///////////////9dmABemQBdmQBdmQD///////////////////////////////9dmQBgnwBdmQBdmQBd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">
+  </a>  
+  </br>
+    <form id="form" action="http://master2021.com/">
+    <input name="email" id="email" type="email" placeholder="Ingresa tu Correo Electronico" required="">
+    <input id="submit" type="submit" value="Enviar Solicitud" class="btn">
+    </form>
+    </section>
+    <div class="container">
+    <section id="features">
+    <div class="grid">
+    <div class="icon">
+    <img src="images\icono-instituciones-ovykyiepor0igeblq67me4ebfinj4hhkvwk305nik0.png">
+    </div>
+    <div class="desc">
+    <h2>Solidez</h2>
+    <p>
+    Master te ofrece la última tecnología en puntos de venta y un enfoque personalizado en atención al cliente y sistemas de pago. Llegamos donde quiera que nos necesites.
+    </p>
+    </div>
+    </div>
+    <div class="grid">
+    <div class="icon">
+    <img src="images\icono-logistica-ovykykae2f333m8vf70vj3x8mae9jvp1k5v1ypkq7k.png">
+    </div>
+    <div class="desc">
+    <h2>Nuestro Compromiso</h2>
+    <p>
+      Creemos en que el progreso de nuestros clientes es también el de nosotros y el de todo el país. Por eso vamos mucho más allá del hecho de ofrecer tecnología
+    </p>
+    </div>
+    </div>
+    <div class="grid">
+    <div class="icon">
+    <img src="images\icono-profesionales-ovykyl88994df87i9pfi3lop7o9mrksrwaijfzjc1c.png">
+    </div>
+    <div class="desc">
+    <h2>Calidad y Profesonalismo</h2>
+    <p>
+      Más que solo una empresa, somos un equipo humano profesional dedicado a ofrecer las mejores soluciones de pago en productos con tecnología de punta.
+    </p>
+    </div>
+    </div>
+    </section>
+    <section id="how-it-works">
+    <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/et87qwoAMGM?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+    </section>
+    <section id="pricing">
+    <div class="product" id="bass">
+    <div class="level">Master POS Q2</div>
+    <h2>$900</h2>
+    <ol>
+    <li>Tecnología Wi-Fi, capacidad 3G/4G y conexión Bluetooth.</li>
+    <li>Software Secure Android de navegación rápida y eficiente.</li>
+    <li>Memoria RAM de 2GB y 16GB ROM.</li>
+    <li>Sistema de cámara inteligente de 5 Mpx con autofocus </br>y escáner de código QR.</li>
+  </br>
+    </ol>
+    <button class="btn"><a href="http://master2021.com/">Comprar</a></button>
+    </div>
+    <div class="product" id="valve">
+    <div class="level">Master POS Q3</div>
+    <h2>$1200</h2>
+    <ol>
+    <li>Memoria RAM de 1GB y 8GB ROM, CPU Qualcomm Snapdragon - Quad-core</li>
+    <li>Conexión Wi-Fi de máximo alcance, Bluetooth 4.0 y red móvil con capacidad 4G</li>
+    <li>Cámara de 5Mpx con escaner de código QR.</li>
+    <li>Batería 3000mAh, Resistente a caídas y Duración 12+ horas</li>
+    </ol>
+    <button class="btn"><a href="http://master2021.com/">Comprar</a></button>
+    </div>
+    </section>
+    <section id="pricing">
+      <div>
+        <a href="http://master2021.com/pos-q2/">
+      <img width="auto" src="images\q2-ovyax786id3o2l12di3lz0geylmsfurbg1auvd2hh8.png">
+    </a>
+    </div>
+      <div>
+        <a href="http://master2021.com/pos-q3/">
+      <img src="images\master-q3-ovybpfbpq9qmp214k7bbce1p44ikknt5nqiqnh7w5s.png">
+    </a>
+    </div>
+  </section>
+    <footer>
+    <ul>
+    <li><a href="#">Privacidad</a></li>
+    <li><a href="#">Terminos</a></li>
+    <li><a href="http://master2021.com/contactanos/">Contacto</a></li>
+    </ul>
+    <span>© Todos los Derechos Reservados, Master 2021. Rif J-41220060-7</span>
+    <span>Pagina creada por motivos educativos.</span>
+    </footer>
+    </div>
+    </div>
+  <!--
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script><div id="fcc_test_suite_wrapper" style="position: relative !important; z-index: 99999 !important;"></div>
+    <script id="rendered-js">
+    // coded by @atjonathan
+    const projectName = 'product-landing-page';
+    localStorage.setItem('example_project', 'Product Landing Page');
+    // REPLACE CDN WITH GITCDN!!!
+    //# sourceURL=pen.js
+        </script>
+  -->
+    </body>
+    </html>
