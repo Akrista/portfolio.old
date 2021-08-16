@@ -1,12 +1,13 @@
 import "./App.css";
 // import React from "react";
-import { CenteredText, NavBar } from "./components";
+import { CenteredText, NavBar, TextWithImage } from "./components";
 
 function App() {
   return (
     <div className="root">
       <NavBar />
       <CenteredText />
+      <TextWithImage />
     </div>
   );
 }
