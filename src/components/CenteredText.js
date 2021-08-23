@@ -1,7 +1,11 @@
 import { Grid, Typography, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
-  container: { background: "#fff3e0", padding: "4vw" },
+  container: {
+    background: theme.palette.primary.light,
+    color: theme.palette.secondary.dark,
+    padding: "4vw",
+  },
 }));
 
 export function CenteredText() {
