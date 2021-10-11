@@ -1,16 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import GithubIcon from "@material-ui/icons/GitHub";
-import YoutubeIcon from "@material-ui/icons/YouTube";
-// import Particle from '../Components/Particle';
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import Particle from "../Components/Particle";
 
 function HomePage() {
   return (
     <HomePageStyled>
-      {/* <div className="particle-con">
-                <Particle />
-            </div> */}
+      <Particle />
       <div className="typography">
         <h1>
           Hi, I'm <span>Jorge Thomas</span>
@@ -22,14 +20,29 @@ function HomePage() {
           have a simple life.
         </p>
         <div className="icons">
-          <a href="#" className="icon i-github">
-            <GithubIcon />
+          <a
+            href="https://github.com/Akrista"
+            target="_blank"
+            className="icon i-github"
+            rel="noreferrer"
+          >
+            <GitHubIcon />
           </a>
-          <a href="#" className="icon i-youtube">
-            <YoutubeIcon />
+          <a
+            href="https://www.linkedin.com/in/akrista/"
+            target="_blank"
+            className="icon i-linkedin"
+            rel="noreferrer"
+          >
+            <LinkedInIcon />
           </a>
-          <a href="#" className="icon i-facebook">
-            <FacebookIcon />
+          <a
+            href="https://www.youtube.com/user/VladAkrista"
+            target="_blank"
+            rel="noreferrer"
+            className="icon i-youtube"
+          >
+            <YouTubeIcon />
           </a>
         </div>
       </div>
