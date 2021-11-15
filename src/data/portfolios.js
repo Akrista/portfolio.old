@@ -34,7 +34,7 @@ const portfolios = [
     },
     {
         id: 4,
-        category: 'Animation',
+        category: 'Docker',
         image: img2,
         link1: 'https://www.google.com',
         link2: 'https://www.google.com',
@@ -43,7 +43,7 @@ const portfolios = [
     },
     {
         id: 5,
-        category: 'Animation',
+        category: 'Docker',
         image: img2,
         link1: 'https://www.google.com',
         link2: 'https://www.google.com',

@@ -20,7 +20,7 @@ function Resume() {
         <div className="resume-content">
           <ResumeItem
             year={"2021 - Present"}
-            title={"IT Analist"}
+            title={"Sysadmin"}
             subTitle={"Vepagos, C.A"}
             text={
               "Deployment of web services through containers, server maintenance and database associated with services in production, programming and maintenance of web applications for deployment."
@@ -52,7 +52,7 @@ function Resume() {
             title={"Responsive Web Design"}
             subTitle={"FreeCodeCamp"}
             text={
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. "
+              "A FreeCodeCamp certification covering essential topics for developers to create web pages, such as HTML (hypertext markup language) for content, CSS (cascading style sheets) for layout, use variables in CSS, best practices for accessibility when building a web form and finally, the creation of web pages that respond to different screen sizes with flexbox."
             }
           />
           <ResumeItem
@@ -60,7 +60,7 @@ function Resume() {
             title={"Philosophy"}
             subTitle={"Universidad Central de Venezuela"}
             text={
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. "
+              "The philosophy career aims to deepen the analysis and critical understanding of the ethical, scientific and humanistic areas in general, in order to offer theoretical and methodological models for a more adequate interpretation of reality."
             }
           />
           <ResumeItem
@@ -68,7 +68,7 @@ function Resume() {
             title={"Law (Jurisprudence)"}
             subTitle={"Universidad Santa Maria"}
             text={
-              "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa nihil impedit natus nostrum? Velit accusantium id quos, nihil vel quod.Quas, magni mollitia, aspernatur consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero. "
+              "The Lawyer graduated from the Santa María University is trained to develop in any area of the different specialties of law, in the free exercise of his profession and in public and private functions in all instances of the administration of justice, in civil and criminal matters. , administrative and of all kinds in the competent jurisdiction. The mission of the Faculty of Law is oriented to efficiently prepare the student in the domain of fundamental legal knowledge and the techniques of application of this learning to interact with the existing legal reality in our country. Creating a professional with a high sense of ethics in their executions, where values and legal deontology will be the north of their development in society."
             }
           />
         </div>
