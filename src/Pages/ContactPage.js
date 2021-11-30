@@ -21,7 +21,12 @@ function ContactPage() {
             <div className="contact-title">
               <h4>Get in Touch</h4>
             </div>
-            <form className="form">
+            <form
+              className="form"
+              action="mailto:akristax@gmail.com"
+              method="get"
+              enctype="text/plain"
+            >
               <div className="form-field">
                 <label htmlFor="name">Enter your name*</label>
                 <input type="text" id="name" />
@@ -43,7 +48,12 @@ function ContactPage() {
                   rows="10"
                 ></textarea>
               </div>
-              <div className="form-field f-button">
+              <div
+                className="form-field f-button"
+                type="submit"
+                name="submit"
+                value="Send"
+              >
                 <PrimaryButton title={"Send Email"} />
               </div>
             </form>

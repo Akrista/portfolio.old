@@ -130,8 +130,9 @@ h6{
 .light-dark-mode{
     position: fixed;
     right: 0;
-    top: 50%;
+    top: 0%;
     background-color: var(--background-light-color-2);
+    border-radius: 5%;
     width: 6.5rem;
     height: 2.5rem;
     z-index: 15;

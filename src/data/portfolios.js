@@ -1,73 +1,35 @@
-import css1 from '../img/portImages/cv_css.png';
-import css2 from '../img/portImages/ms.png';
-import react1 from '../img/portImages/react_styled.png';
-import img2 from '../img/portImages/maya-4.jpg';
-import img3 from '../img/portImages/maya-3.jpg';
+import cssthemeswitcher from "../img/portImages/css-theme-switcher.png";
+import rockpaperscissors from "../img/portImages/rockpaperscissors.png";
+import framermo from "../img/portImages/framer-mo.png";
 
 const portfolios = [
-    {
-        id: 1,
-        category: 'CSS',
-        image: css1,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'Responsive Resume',
-        text: 'Created with only HTML and CSS.'
-    },
-    {
-        id: 2,
-        category: 'Python',
-        image: img3,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'How To Animate In Maya',
-        text: 'Number one Animation Application'
-    },
-    {
-        id: 3,
-        category: 'Javascript',
-        image: img3,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'How To Animate In Maya',
-        text: 'Number one Animation Application'
-    },
-    {
-        id: 4,
-        category: 'Docker',
-        image: img2,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'How To Use Blender',
-        text: 'Free Animation Software'
-    },
-    {
-        id: 5,
-        category: 'Docker',
-        image: img2,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'How To Use Blender',
-        text: 'Free Animation Software'
-    },
-    {
-        id: 6,
-        category: 'React JS',
-        image: react1,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'Responsive Portfolio Website',
-        text: 'Created using different technologies such as Material UI, Styled-Components and more...'
-    },
-    {
-        id: 7,
-        category: 'CSS',
-        image: css2,
-        link1: 'https://www.google.com',
-        link2: 'https://www.google.com',
-        title: 'Microsoft Website Clone',
-        text: 'Created using HTML and CSS'
-    }
-]
+  {
+    id: 1,
+    category: "CSS",
+    image: cssthemeswitcher,
+    link1: "https://akrista.github.io/CSS-Theme-Switcher",
+    link2: "https://github.com/akrista/CSS-Theme-Switcher",
+    title: "CSS-Theme-Switcher",
+    text: "Created only with HTML and CSS.",
+  },
+  {
+    id: 2,
+    category: "Javascript",
+    image: rockpaperscissors,
+    link1: "https://akrista.github.io/RockPaperScissors",
+    link2: "https://github.com/akrista/RockPaperScissors",
+    title: "RockPaperScissors",
+    text: "Rock Paper Scissors game only with Javascript.",
+  },
+  {
+    id: 3,
+    category: "React",
+    image: framermo,
+    link1: "https://akrista.github.io/framer-mo/",
+    link2: "https://github.com/akrista/framer-mo",
+    title: "Framer Modals",
+    text: "Modals with Framer in React.",
+  },
+];
 
 export default portfolios;

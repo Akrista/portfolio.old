@@ -68,7 +68,7 @@ function Resume() {
             title={"Law (Jurisprudence)"}
             subTitle={"Universidad Santa Maria"}
             text={
-              "The Lawyer graduated from the Santa María University is trained to develop in any area of the different specialties of law, in the free exercise of his profession and in public and private functions in all instances of the administration of justice, in civil and criminal matters. , administrative and of all kinds in the competent jurisdiction. The mission of the Faculty of Law is oriented to efficiently prepare the student in the domain of fundamental legal knowledge and the techniques of application of this learning to interact with the existing legal reality in our country. Creating a professional with a high sense of ethics in their executions, where values and legal deontology will be the north of their development in society."
+              "The Lawyer graduated from the Santa María University is trained to develop in any area of the different specialties of law, in the free exercise of his profession and in public and private functions in all instances of the administration of justice, in civil and criminal matters. , administrative and of all kinds in the competent jurisdiction."
             }
           />
         </div>
