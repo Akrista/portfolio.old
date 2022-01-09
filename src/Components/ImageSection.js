@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import resume from "../img/resume.jpg";
+import resume from "../img/logo.svg";
 import PrimaryButton from "./PrimaryButton";
 
 function ImageSection() {
@@ -62,9 +62,22 @@ const ImageSectionStyled = styled.div`
       margin-bottom: 2rem;
     }
   }
+  @keyframes color-rotate {
+    from {
+      filter: hue-rotate(0deg);
+    }
+
+    to {
+      filter: hue-rotate(360deg);
+    }
+  }
   .left-content {
     width: 100%;
     img {
+      animation: color-rotate 5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      border-radius: 50%;
       width: 95%;
       object-fit: cover;
     }

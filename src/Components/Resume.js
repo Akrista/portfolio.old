@@ -23,7 +23,7 @@ function Resume() {
             title={"Sysadmin"}
             subTitle={"Vepagos, C.A"}
             text={
-              "Deployment of web services through containers, server maintenance and database associated with services in production, programming and maintenance of web applications for deployment."
+              "Deployment of web services through containers, server maintenance and database associated with services in production, programming and maintenance of web applications."
             }
           />
           <ResumeItem

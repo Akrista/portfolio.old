@@ -16,7 +16,7 @@ function Skills() {
           <ProgressBar title={"Docker"} width={"75%"} text={"75%"} />
           <ProgressBar title={"Mysql"} width={"80%"} text={"80%"} />
           <ProgressBar title={"React JS"} width={"60%"} text={"60%"} />
-          <ProgressBar title={"Vue"} width={"50%"} text={"50%"} />
+          <ProgressBar title={"Linux"} width={"95%"} text={"95%"} />
           <ProgressBar title={"VBA"} width={"90%"} text={"90%"} />
         </div>
       </InnerLayout>

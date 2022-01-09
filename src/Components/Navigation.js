@@ -83,7 +83,19 @@ flex-direction: column;
 align-items: center;
 height: 100%;
 width: 100%;
+@keyframes color-rotate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
 .avatar {
+    animation: color-rotate 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     width: 100%;
     text-align: center;
     padding: 1rem 0;

@@ -150,8 +150,8 @@ h6{
   //Nav Toggler
   .ham-burger-menu{
       position: absolute;
-      right: 5%;
-      top: 3%; 
+      right: 1%;
+      top: 7%; 
       display: none;
       z-index: 15;
       svg{

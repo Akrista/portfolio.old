@@ -1,6 +1,7 @@
 import cssthemeswitcher from "../img/portImages/css-theme-switcher.png";
 import rockpaperscissors from "../img/portImages/rockpaperscissors.png";
 import framermo from "../img/portImages/framer-mo.png";
+import candyCrushReactjsAK from "../img/portImages/candycrushreactjsak.png";
 
 const portfolios = [
   {
@@ -29,6 +30,15 @@ const portfolios = [
     link2: "https://github.com/akrista/framer-mo",
     title: "Framer Modals",
     text: "Modals with Framer in React.",
+  },
+  {
+    id: 4,
+    category: "HTML",
+    image: candyCrushReactjsAK,
+    link1: "https://akrista.github.io/candyCrushReactjsAK/",
+    link2: "https://github.com/Akrista/candyCrushReactjsAK",
+    title: "Candy Crush React/HTML",
+    text: "A Candy Crush clone both in React and HTML.",
   },
 ];
 
