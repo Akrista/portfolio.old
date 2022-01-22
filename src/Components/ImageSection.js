@@ -40,7 +40,7 @@ function ImageSection() {
         <PrimaryButton
           title={
             <a
-              href="https://drive.google.com/file/d/1koTYoj7yXDqKZHq71XEivQjpM8v8Ny8X/view?usp=sharing0"
+              href="https://drive.google.com/file/d/1bDduXngJVVVsnUU1-Z36JSxIotYRIbOf/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
