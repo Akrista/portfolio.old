@@ -1,4 +1,10 @@
 {
-  "recommendations": ["astro-build.astro-vscode"],
+  "recommendations": [
+    "astro-build.astro-vscode",
+    "GitHub.copilot",
+    "GitHub.copilot-labs",
+    "ms-azuretools.vscode-docker",
+    "ms-vscode-remote.remote-containers"
+  ],
   "unwantedRecommendations": []
 }
