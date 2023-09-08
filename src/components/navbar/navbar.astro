@@ -2,26 +2,36 @@
 import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
+import Themeswitch from "@components/themeswitch.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
   {
-    title: "Features",
+    title: "Services",
     path: "#",
     children: [
-      { title: "Action", path: "/" },
-      { title: "Another action", path: "#" },
-      { title: "Dropdown Submenu", path: "#" },
-      { title: "404 Page", path: "/404" },
+      { title: "IT Consulting", path: "/consulting" },
+      { title: "Data Insights", path: "/insights" },
+      { title: "Data Management", path: "/dba" },
+      { title: "Web Development", path: "/webdev" },
+      { title: "Devops & RPA", path: "/devops" },
+      // { title: "Action", path: "/" },
+      // { title: "Another action", path: "#" },
+      // { title: "Dropdown Submenu", path: "#" },
+      // { title: "404 Page", path: "/404" },
     ],
   },
-  {
-    title: "Pricing",
-    path: "/pricing",
-  },
+  // {
+  //   title: "Pricing",
+  //   path: "/pricing",
+  // },
   {
     title: "About",
     path: "/about",
+  },
+  {
+    title: "Portfolio",
+    path: "/portfolio",
   },
   {
     title: "Blog",
@@ -39,8 +49,8 @@ const menuitems = [
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">Astro</span><span
-            class="text-slate-500">ship</span
+          ><span class="font-bold text-slate-800">not</span><span
+            class="text-slate-500">Akrista</span
           >
         </a>
         <div class="block lg:hidden">
@@ -79,10 +89,12 @@ const menuitems = [
         </div>
       </MenuItems>
     </Astronav>
+
     <div>
       <div class="hidden lg:flex items-center gap-4">
-        <a href="#">Log in</a>
-        <Link href="#" size="md">Sign up</Link>
+        <a href="https://home.notakrista.com">Log in</a>
+        <Themeswitch />
+        <!-- <Link href="#" size="md">Sign up</Link> -->
       </div>
     </div>
   </header>
