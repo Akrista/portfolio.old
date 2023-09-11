@@ -1,0 +1,59 @@
+---
+import Navbar from "../components/navbar/Navbar.astro";
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "notAkrista",
+  description = "A community driver solution for small business",
+} = Astro.props;
+---
+
+<!doctype html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <style>
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+      }
+    </style>
+
+    <script>
+      var d = document.documentElement,
+        t = document.querySelector("#theme-btn"),
+        m = localStorage.getItem("theme");
+
+      if (m == "dark") {
+        d.classList.add("dark");
+      }
+
+      t.addEventListener("click", function () {
+        if (d.classList.contains("dark")) {
+          d.classList.remove("dark");
+          localStorage.removeItem("theme");
+        } else {
+          d.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-amber-50 text-black dark:bg-gray-800 dark:text-white">
+    <Navbar logo="/path/to/logo.svg" title="notAkrista" />
+
+    <slot />
+  </body>
+</html>
