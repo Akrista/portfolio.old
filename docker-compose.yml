@@ -5,5 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "4321:3000"
+      - "4321:4321"
     restart: unless-stopped
+    volumes:
+      - ./hosts:/etc/hosts
