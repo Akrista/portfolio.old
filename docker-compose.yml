@@ -7,5 +7,3 @@ services:
     ports:
       - "4321:4321"
     restart: unless-stopped
-    volumes:
-      - ./hosts:/etc/hosts
