@@ -1,0 +1,9 @@
+version: "3"
+services:
+  akrista.github.io:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4321:4321"
+    restart: unless-stopped
