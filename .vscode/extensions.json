@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "astro-build.astro-vscode",
+    "github.copilot",
+    "github.copilot-labs",
+    "ms-azuretools.vscode-docker",
+    "ms-vscode-remote.remote-containers",
+    "bradlc.vscode-tailwindcss",
+    "astro-build.houston",
+    "moalamri.inline-fold",
+    "unifiedjs.vscode-mdx",
+    "yzhang.markdown-all-in-one"
+  ],
+  "unwantedRecommendations": []
+}
