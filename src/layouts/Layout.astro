@@ -1,66 +1,33 @@
 ---
-import { SEO } from "astro-seo";
-import Footer from "@components/footer.astro";
-import Navbar from "@components/navbar/navbar.astro";
-import "@fontsource-variable/inter/index.css";
+import Header from "../components/Header.astro";
+import BlurCircle from "@/components/shared/BlurCircle.astro";
+import theme from "@/data/theme";
+import SEOTags from "@/components/seo/SEOTags.astro";
+import type { HeadTags } from "@/utils/types/HeadTags";
 
-export interface Props {
-  title: string;
-}
+import "@fontsource/open-sans";
+import "@/styles/tailwind.css";
+import "@/styles/post.css";
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
+export type Props = HeadTags;
 
-const resolvedImageWithDomain = new URL(
-  "/opengraph.jpg",
-  Astro.site
-).toString();
-
-const { title } = Astro.props;
-
-const makeTitle = title
-  ? title + " | " + "notAkrista"
-  : "notAkrista - Web Solutions";
+const headTags = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html class="" lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
-    <SEO
-      title={makeTitle}
-      description="Astroship is a starter website template for Astro built with TailwindCSS."
-      canonical={canonicalURL}
-      twitter={{
-        creator: "@akrista",
-        site: "@notakrista",
-        card: "summary_large_image",
-      }}
-      openGraph={{
-        basic: {
-          url: canonicalURL,
-          type: "website",
-          title: `notAkrista - Web Solutions`,
-          image: resolvedImageWithDomain,
-        },
-        image: {
-          alt: "Astroship Homepage Screenshot",
-        },
-      }}
-    />
-  </head>
-  <body class="bg-white dark:bg-neutral-900">
-    <Navbar />
+<html lang="en">
+  <SEOTags {...headTags} />
+
+  <body
+    class="mx-auto flex min-h-screen max-w-[872px] flex-col gap-9 bg-neutral-950 px-10 py-8 text-sm text-neutral-400 md:gap-20 md:py-16"
+  >
+    <Header />
+    <BlurCircle position="top" color={theme.colors.blur.top} />
+    <BlurCircle position="bottom" color={theme.colors.blur.bottom} />
     <slot />
-    <Footer />
     <style is:global>
-      /* Improve Page speed */
-      /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
-      img {
-        content-visibility: auto;
+      html {
+        font-family: "Open Sans";
       }
     </style>
   </body>
