@@ -13,7 +13,6 @@
     "lint": "biome check --apply ./src"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@astrojs/check": "^0.5.10",
     "@astrojs/svelte": "^5.4.0",
     "@astrojs/tailwind": "^5.1.0",
@@ -36,23 +35,6 @@
     "svelte": "^4.2.15",
     "tailwindcss": "^3.4.3",
     "typescript": "^5.4.5"
-||||||| bce6bbc
-    "@astrojs/sitemap": "^3.0.0",
-    "@astrojs/tailwind": "^5.0.0",
-    "@fontsource/open-sans": "^5.0.12",
-    "astro": "^3.1.0",
-    "astro-robots-txt": "^1.0.0",
-    "astro-seo": "0.8.0",
-    "tailwindcss": "^3.3.3"
-=======
-    "@astrojs/sitemap": "^3.0.3",
-    "@astrojs/tailwind": "^5.0.0",
-    "@fontsource/open-sans": "^5.0.12",
-    "astro": "^3.6.4",
-    "astro-robots-txt": "^1.0.0",
-    "astro-seo": "0.8.0",
-    "tailwindcss": "^3.3.3"
->>>>>>> master
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.6.1",
