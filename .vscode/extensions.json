@@ -4,6 +4,7 @@
     "bradlc.vscode-tailwindcss",
     "moalamri.inline-fold",
     "yzhang.markdown-all-in-one",
-    "astro-build.astro-vscode"
+    "astro-build.astro-vscode",
+    "svelte.svelte-vscode"
   ]
 }
